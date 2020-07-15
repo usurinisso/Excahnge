@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6e0776be-fe86-45d2-aedf-a5e9f807fbdb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="workOffline" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1efhsM6VRv3w9lLOxkALhyGfcND" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tautis\Desktop\SEB\Currency Exchange\exchange\src\main\resources\xsd" />
+      <recent name="C:\Users\Tautis\Desktop\SEB\Currency Exchange\exchange\src\main\resources" />
+      <recent name="C:\Users\Tautis\Desktop\SEB\Currency Exchange\exchange" />
+      <recent name="C:\Users\Tautis\Desktop\SEB\Currency Exchange\exchange\src\main\java\com\currency\exchange" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn update" />
+      <command value="mvn " />
+      <command value="mvn compile" />
+      <command value="mvn mvn clean" />
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="ExchangeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="exchange" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.currency.exchange.ExchangeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e0776be-fe86-45d2-aedf-a5e9f807fbdb" name="Default Changelist" comment="" />
+      <created>1594718759708</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594718759708</updated>
+      <workItem from="1594718763001" duration="13364000" />
+    </task>
+    <task id="LOCAL−00001" summary="Simple index page template">
+      <created>1594730942347</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1594730942347</updated>
+    </task>
+    <task id="LOCAL−00002" summary="Added database options">
+      <created>1594730975731</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1594730975731</updated>
+    </task>
+    <task id="LOCAL−00003" summary="Added simple main page controller">
+      <created>1594730992874</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1594730992874</updated>
+    </task>
+    <task id="LOCAL−00004" summary="Added needed dependencies, configured jaxb2 plugin">
+      <created>1594731022235</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1594731022235</updated>
+    </task>
+    <task id="LOCAL−00005" summary="Generated Java classes from XSD files with jaxb2 plugin">
+      <created>1594736119982</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1594736119982</updated>
+    </task>
+    <task id="LOCAL−00006" summary="XSD from https://www.lb.lt/webservices/FxRates/">
+      <created>1594736338640</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1594736338640</updated>
+    </task>
+    <task id="LOCAL−00007" summary="Copied XSD from http://www.lb.lt/webservices/FxRates/Ccy.xsd,&#10;xs:include URI produces HTTP 403 error code">
+      <created>1594736452129</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1594736452129</updated>
+    </task>
+    <task id="LOCAL−00008" summary="Added source path for xsd files and output for generated java classes">
+      <created>1594736495143</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1594736495143</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Simple index page template" />
+    <MESSAGE value="Added database options" />
+    <MESSAGE value="Added simple main page controller" />
+    <MESSAGE value="Added needed dependencies, configured jaxb2 plugin" />
+    <MESSAGE value="Generated Java classes from XSD files with jaxb2 plugin" />
+    <MESSAGE value="XSD from https://www.lb.lt/webservices/FxRates/" />
+    <MESSAGE value="Copied XSD from http://www.lb.lt/webservices/FxRates/Ccy.xsd,&#10;xs:include URI produces HTTP 403 error code" />
+    <MESSAGE value="Added source path for xsd files and output for generated java classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added source path for xsd files and output for generated java classes" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="559" y="114" width="1204" height="811" key="CommitChangelistDialog2" timestamp="1594736494226">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="559" y="114" width="1204" height="811" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594736494226" />
+    <state width="1877" height="186" key="GridCell.Tab.0.bottom" timestamp="1594833167667">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="186" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594833167667" />
+    <state width="1877" height="186" key="GridCell.Tab.0.center" timestamp="1594833167667">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="186" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594833167667" />
+    <state width="1877" height="186" key="GridCell.Tab.0.left" timestamp="1594833167667">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="186" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594833167667" />
+    <state width="1877" height="186" key="GridCell.Tab.0.right" timestamp="1594833167667">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="186" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594833167667" />
+    <state width="1877" height="193" key="GridCell.Tab.1.bottom" timestamp="1594732875888">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="193" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594732875888" />
+    <state width="1877" height="193" key="GridCell.Tab.1.center" timestamp="1594732875888">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="193" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594732875888" />
+    <state width="1877" height="193" key="GridCell.Tab.1.left" timestamp="1594732875888">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="193" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594732875888" />
+    <state width="1877" height="193" key="GridCell.Tab.1.right" timestamp="1594732875888">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="193" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594732875888" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1594732924547">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594732924547" />
+    <state x="712" y="254" key="VcsDiffUtil.ChangesDialog" timestamp="1594735106610">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="712" y="254" key="VcsDiffUtil.ChangesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594735106610" />
+    <state x="776" y="298" width="610" height="444" key="chooseDestDirectoryDialog" timestamp="1594735907832">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="776" y="298" width="610" height="444" key="chooseDestDirectoryDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594735907832" />
+    <state x="459" y="212" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1594735819030">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="459" y="212" key="com.intellij.javaee.MapExternalResourceDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594735819030" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1594832844368">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1594832844368" />
+  </component>
+</project>
