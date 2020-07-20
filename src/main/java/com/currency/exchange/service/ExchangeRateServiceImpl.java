@@ -30,6 +30,7 @@ public class ExchangeRateServiceImpl implements ExchangeRateService {
 
     @Override
     public void saveAllExchangeRates(ExchangeRate[] ers) {
+        Arrays.asList(ers).forEach(item->item.setParent());
         exchangeRateRepository.saveAll(Arrays.asList(ers));
     }
 }
