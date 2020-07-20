@@ -7,10 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
 
 @Data
 @Builder
@@ -34,6 +31,6 @@ public class CurrencyAmount {
 
     @ManyToOne
     @JoinColumn(referencedColumnName = "id")
-    @JsonManagedReference
+    @XmlTransient
     private ExchangeRate exchangeRate;
 }
