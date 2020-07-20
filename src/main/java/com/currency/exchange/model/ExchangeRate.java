@@ -1,6 +1,5 @@
 package com.currency.exchange.model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,7 +10,7 @@ import javax.xml.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import org.hibernate.annotations.Cascade;
+
 
 
 @Data
@@ -35,13 +34,11 @@ public class ExchangeRate {
     private Date dt;
 
     @XmlElement(name = "CcyAmt", namespace = "http://www.lb.lt/WebServices/FxRates")
-
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "exchangeRate")
     private List<CurrencyAmount> ccyAmt = new ArrayList<>();
 
-    public void addCcyAmt(CurrencyAmount cAmt) {
-        cAmt.setExchangeRate(this);
-        ccyAmt.add(cAmt);
+    public void setParent() {
+        ccyAmt.forEach(item->item.setExchangeRate(this));
     }
 
 }
