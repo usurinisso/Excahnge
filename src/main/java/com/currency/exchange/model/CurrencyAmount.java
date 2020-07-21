@@ -1,6 +1,5 @@
 package com.currency.exchange.model;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -21,7 +20,7 @@ public class CurrencyAmount {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
     @XmlElement(name = "Ccy", namespace = "http://www.lb.lt/WebServices/FxRates")
     private String ccy;
@@ -33,4 +32,9 @@ public class CurrencyAmount {
     @JoinColumn(referencedColumnName = "id")
     @XmlTransient
     private ExchangeRate exchangeRate;
+
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(referencedColumnName = "id")
+    @XmlTransient
+    private Currency currency;
 }
