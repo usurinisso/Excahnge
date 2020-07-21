@@ -25,7 +25,7 @@ public class ExchangeRate {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Long id;
+    private int id;
 
     @XmlElement(name = "Tp", namespace = "http://www.lb.lt/WebServices/FxRates")
     private String tp;
@@ -34,7 +34,7 @@ public class ExchangeRate {
     private Date dt;
 
     @XmlElement(name = "CcyAmt", namespace = "http://www.lb.lt/WebServices/FxRates")
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "exchangeRate")
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "exchangeRate")
     private List<CurrencyAmount> ccyAmt = new ArrayList<>();
 
     public void setParent() {
