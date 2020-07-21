@@ -17,6 +17,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement(name="FxRates", namespace = "http://www.lb.lt/WebServices/FxRates")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class ExchangeRates {
+
     @XmlElement(name = "FxRate", namespace = "http://www.lb.lt/WebServices/FxRates")
     private ExchangeRate[] exchangeRate;
+
 }
