@@ -10,5 +10,5 @@ import java.util.List;
 @Repository
 public interface CurrencyAmountRepository extends JpaRepository<CurrencyAmount, Integer> {
     @Query(value = "FROM CurrencyAmount b where b.exchangeRate.id = ?1")
-    public List<CurrencyAmount> getCurrencyAmountByExchangeRateId(Long id);
+    public List<CurrencyAmount> getCurrencyAmountByExchangeRateId(int id);
 }
