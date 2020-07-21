@@ -4,7 +4,6 @@ import com.currency.exchange.model.Currency;
 import com.currency.exchange.model.Currencies;
 import com.currency.exchange.model.ExchangeRate;
 import com.currency.exchange.model.ExchangeRates;
-import com.currency.exchange.service.CurrencyAmountService;
 import com.currency.exchange.service.CurrencyService;
 import com.currency.exchange.service.ExchangeRateService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,11 +29,10 @@ public class DataLoader implements ApplicationRunner {
     @Autowired
     private ExchangeRateService exchangeRateService;
 
-    @Autowired
-    private CurrencyAmountService currencyAmountService;
 
     private static String cUri = "https://www.lb.lt/webservices/FxRates/FxRates.asmx/getCurrencyList";
-    private static String eUri = "https://www.lb.lt/webservices/FxRates/FxRates.asmx/getFxRatesForCurrency?tp=EU&ccy=&dtFrom=2019-01-01&dtTo=2019-02-01";
+    private static String dateNow = java.time.LocalDate.now().toString();
+    private static String eUri = "https://www.lb.lt/webservices/FxRates/FxRates.asmx/getFxRatesForCurrency?tp=EU&ccy=&dtFrom=2020-07-10&dtTo=" + dateNow;
 
     public void run(ApplicationArguments args) throws JAXBException {
         JAXBContext jaxbContext = JAXBContext.newInstance(Currencies.class);
@@ -48,7 +46,7 @@ public class DataLoader implements ApplicationRunner {
         String response1 = template.getForObject(eUri, String.class);
         ExchangeRates er = (ExchangeRates) jaxbUnmarshaller1.unmarshal(new StringReader(response1));
         ExchangeRate[] ers = er.getExchangeRate();
-        //exchangeRateService.saveExchangeRate(ers[1]);
         exchangeRateService.saveAllExchangeRates(ers);
+
     }
 }
