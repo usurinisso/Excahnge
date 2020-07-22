@@ -43,10 +43,10 @@ public class DataLoader implements ApplicationRunner {
         Currencies cs = (Currencies) jaxbUnmarshaller.unmarshal(new StringReader(response));
         Currency[] ccs = cs.getCurrency();
         currencyService.saveAllCurrencies(ccs);
-        JAXBContext jaxbContext1 = JAXBContext.newInstance(ExchangeRates.class);
-        Unmarshaller jaxbUnmarshaller1 = jaxbContext1.createUnmarshaller();
-        String response1 = template.getForObject(eUri, String.class);
-        ExchangeRates er = (ExchangeRates) jaxbUnmarshaller1.unmarshal(new StringReader(response1));
+        jaxbContext = JAXBContext.newInstance(ExchangeRates.class);
+        jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+        response = template.getForObject(eUri, String.class);
+        ExchangeRates er = (ExchangeRates) jaxbUnmarshaller.unmarshal(new StringReader(response));
         ExchangeRate[] ers = er.getExchangeRate();
         exchangeRateService.saveAllExchangeRates(ers);
         exchangeRateService.preloadNewestExchangeRates();
