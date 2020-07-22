@@ -1,6 +1,5 @@
 package com.currency.exchange.service;
 
-import com.currency.exchange.model.Currency;
 import com.currency.exchange.model.ExchangeRate;
 import com.currency.exchange.repository.CurrencyRepository;
 import com.currency.exchange.repository.ExchangeRateRepository;
@@ -11,7 +10,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static jdk.nashorn.internal.objects.NativeMath.round;
 
 @Service
 public class ExchangeRateServiceImpl implements ExchangeRateService {
