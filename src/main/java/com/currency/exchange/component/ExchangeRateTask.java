@@ -35,8 +35,9 @@ public class ExchangeRateTask extends QuartzJobBean {
             ExchangeRates er = (ExchangeRates) jaxbUnmarshaller.unmarshal(new StringReader(response));
             ExchangeRate[] ers = er.getExchangeRate();
             exchangeRateService.saveAllExchangeRates(ers);
+            exchangeRateService.preloadNewestExchangeRates();
         } catch (JAXBException e) {
-
+            e.printStackTrace();
         }
 
     }
