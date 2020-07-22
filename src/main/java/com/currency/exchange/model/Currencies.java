@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 
 import javax.xml.bind.annotation.*;
 
-
 @Data
 @Builder
 @NoArgsConstructor

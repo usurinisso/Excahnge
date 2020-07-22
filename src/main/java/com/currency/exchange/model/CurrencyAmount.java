@@ -12,8 +12,6 @@ import javax.xml.bind.annotation.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
-@Table(name = "Currency_Amount")
 @XmlRootElement(name = "CcyAmt", namespace = "http://www.lb.lt/WebServices/FxRates")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class CurrencyAmount {
@@ -28,13 +26,4 @@ public class CurrencyAmount {
     @XmlElement(name = "Amt", namespace = "http://www.lb.lt/WebServices/FxRates")
     private double amt;
 
-    @ManyToOne
-    @JoinColumn(referencedColumnName = "id")
-    @XmlTransient
-    private ExchangeRate exchangeRate;
-
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinColumn(referencedColumnName = "id")
-    @XmlTransient
-    private Currency currency;
 }

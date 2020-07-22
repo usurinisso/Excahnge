@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Currency Exchange Rates</title>
+</head>
+<body>
+    <h1>Currency Exchange Rates</h1>
+    <h2>Currency exchange rate history</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Currency</th>
+            <th>Currency ECB rate</th>
+            <th>Currency exchange rate date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="er : ${exchangeRate}">
+            <td><span th:text="${er.getCcyT()}">Currency</span></td>
+            <td><span th:text="${er.getCcyTAmt()}">Currency ECB rate</span></td>
+            <td><span th:text="${#dates.format(er.dt, 'yyyy-MM-dd')}">Currency exchange rate date</span></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

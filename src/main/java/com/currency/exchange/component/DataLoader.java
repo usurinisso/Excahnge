@@ -32,7 +32,9 @@ public class DataLoader implements ApplicationRunner {
 
     private static String cUri = "https://www.lb.lt/webservices/FxRates/FxRates.asmx/getCurrencyList";
     private static String dateNow = java.time.LocalDate.now().toString();
-    private static String eUri = "https://www.lb.lt/webservices/FxRates/FxRates.asmx/getFxRatesForCurrency?tp=EU&ccy=&dtFrom=2020-07-10&dtTo=" + dateNow;
+    //private static String eUri = "https://www.lb.lt/webservices/FxRates/FxRates.asmx/getFxRatesForCurrency?tp=EU&ccy=&dtFrom=2020-07-12&dtTo=" + dateNow;
+    private static String eUri = "https://www.lb.lt/webservices/FxRates/FxRates.asmx/getFxRatesForCurrency?tp=EU&ccy=&dtFrom=2014-12-30&dtTo=" + dateNow;
+    //private static String eUri = "https://www.lb.lt/webservices/FxRates/FxRates.asmx/getFxRatesForCurrency?tp=LT&ccy=&dtFrom=2010-01-01&dtTo=" + dateNow;
 
     public void run(ApplicationArguments args) throws JAXBException {
         JAXBContext jaxbContext = JAXBContext.newInstance(Currencies.class);
@@ -47,6 +49,6 @@ public class DataLoader implements ApplicationRunner {
         ExchangeRates er = (ExchangeRates) jaxbUnmarshaller1.unmarshal(new StringReader(response1));
         ExchangeRate[] ers = er.getExchangeRate();
         exchangeRateService.saveAllExchangeRates(ers);
-
+        exchangeRateService.preloadNewestExchangeRates();
     }
 }
