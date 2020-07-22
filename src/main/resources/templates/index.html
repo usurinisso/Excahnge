@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+      xmlns:th="http://www.thymeleaf.org" xmlns:form="http://www.w3.org/1999/html">
 <head>
     <title>Currency Exchange</title>
 </head>
 <body>
     <h1>Currency Exchange</h1>
-    <h2>This is a currency exchange site</h2>
     <p>Select currencies to exchange</p>
+    <form method="post">
+        <div>
+            <label>Currency from</label>
+            <select th:name = "erccyf">
+            <option selected disabled value="">Select Currency</option>
+            <option th:each="er : ${exchangeRate}"  th:value="${er.getCcyT()}"  th:text="${er.getCcyT()}"></option>
+            </select>
+            <label>Amount</label>
+            <input type="text" th:name="examount">
+            <label>To currency</label>
+            <select th:name = "erccyt">
+                <option selected disabled value="">Select Currency</option>
+                <option th:each="er : ${exchangeRate}"  th:value="${er.getCcyT()}"  th:text="${er.getCcyT()}"></option>
+            </select>
+            <button type="submit">Convert</button>
+        </div>
+    </form>
+    <div>
+        <span th:text="${msg}"></span>
+    </div>
+    <h2>Newest currency exchange rates</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Currency</th>
+            <th>Currency ECB rate</th>
+            <th>Currency exchange rate date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="er : ${exchangeRate}">
+            <td><a th:href="${er.getCcyT()}"><span th:text="${er.getCcyT()}">Currency</span></a></td>
+            <td><span th:text="${er.getCcyTAmt()}">Currency ECB rate</span></td>
+            <td><span th:text="${#dates.format(er.dt, 'yyyy-MM-dd')}">Currency exchange rate date</span></td>
+        </tr>
+    </tbody>
+</table>
 </body>
 </html>
