@@ -10,9 +10,9 @@ A simple currency exchange web page for a job interview
 
 *When starting up the application, let it to preload the data into the database. Everything else - self explanatory.
 
-##Framework:
+## Framework:
 **Spring**
-##Made with:
+## Made with:
 **JAXB, JPA, H2, THYMELEAF, LOMBOK, QUARTZ, REST**
 
 _**NO TEST COVERAGE, I am going on a vacation and had no time, will do it later (so there might be some bugs)**_
