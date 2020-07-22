@@ -2,8 +2,8 @@
 A simple currency exchange web page for a job interview
 
 ## Functionality:
-1. Puts all iso 4217 currencies in H2 database
-2. Puts all exchange rates from a specific date to now in H2 database
+1. Puts all iso 4217 currencies into H2 database
+2. Puts all exchange rates from a specific date to now into H2 database
 3. Lets you see the newest exchange rates for each currency
 4. Lets you to convert currencies
 5. Lets see currency exchange rate history
