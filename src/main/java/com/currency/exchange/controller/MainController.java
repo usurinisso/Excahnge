@@ -31,7 +31,11 @@ public class MainController {
     public ModelAndView exchangeRates(@PathVariable (name = "ccy") String ccy) {
         List<ExchangeRate> exchangeRates = exchangeRateService.getAllExchangeRates(ccy);
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("exchangeRate", exchangeRates);
+        if(!exchangeRates.isEmpty()) {
+            modelAndView.addObject("exchangeRate", exchangeRates);
+        } else {
+            modelAndView.addObject("msg", "Currency " + ccy + " NOT FOUND");
+        }
         modelAndView.setViewName("currency");
         return modelAndView;
     }
@@ -45,7 +49,7 @@ public class MainController {
         ModelAndView modelAndView = new ModelAndView();
         if(ccyF == null) modelAndView.addObject("msg", "Please provide currency from which you want to convert");
         else if(ccyT == null) modelAndView.addObject("msg", "Please provide currency to which you want to convert");
-        else if(exAmt == null) modelAndView.addObject("msg", "Please provide the amount which you want to convert");
+        else if(exAmt == "") modelAndView.addObject("msg", "Please provide the amount which you want to convert");
         else if(!exAmt.matches(pattern)) modelAndView.addObject("msg", "Please provide a valid amount which you want to convert");
         else {
             double exA = Double.parseDouble(exAmt);
